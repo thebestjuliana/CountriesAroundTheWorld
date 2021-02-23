@@ -54,11 +54,11 @@ namespace CountriesAroundTheWorld.Controllers
                     string colorString = "";
                     foreach (string color in country.Colors)
                     {
-                        colorString += color;
+                        colorString += color + ", ";
 
                     }
                     TempData["colors"] = colorString;
-                    //TempData["flag"] = country.FlagSrc;
+                   // TempData["flag"] = country.FlagSrc;
                     return RedirectToAction("Details", country);
                 }
                
