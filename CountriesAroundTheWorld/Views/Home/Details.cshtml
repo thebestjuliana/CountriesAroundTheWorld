@@ -1,0 +1,21 @@
+﻿
+
+
+
+    <p><strong> Country Name: </strong> @TempData.Peek("name")</p>
+
+    <p>
+        <strong> @TempData.Peek("name")'s Official Language(s):</strong> @TempData.Peek("language")
+    </p>
+    <p>
+        <strong>  @TempData.Peek("name")'s Greeting:</strong> @TempData.Peek("language")
+    </p>
+    <p>
+        <strong>  @TempData.Peek("name")'s Primary National Color(s):</strong> @TempData.Peek("language")
+    </p>
+
+
+
+<form asp-controller="Home" asp-action="Description">
+    <input type="submit" value="Continue" />
+</form>

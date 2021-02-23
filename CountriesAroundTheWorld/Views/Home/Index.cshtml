@@ -1,0 +1,10 @@
+﻿@model List<Country>
+<form method="post">
+    <select name="c">
+        @foreach (Country c in Model)
+        {
+            <option name="c" value="@c.Name">@c.Name</option>
+        }
+    </select>
+    <input type="submit" />
+</form>
