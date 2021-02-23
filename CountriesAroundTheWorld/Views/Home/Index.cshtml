@@ -1,6 +1,11 @@
 ﻿@model List<Country>
 <form method="post">
-    <select name="c">
+    @if(Model==null)
+    {
+    <p color="red">You have not selected a country yet</p>
+    }
+    <select name="c" required>
+        <<option value="">--Select A Country--</option>
         @foreach (Country c in Model)
         {
             <option name="c" value="@c.Name">@c.Name</option>
