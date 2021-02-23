@@ -1,3 +1,7 @@
 ﻿<h2>All about @TempData.Peek("name")</h2>
 <p>@TempData.Peek("description")</p>
-@*<img src="~/Images/Algeria.png" width="500" alt="Algeria's flag" />*@
+<img id="CountryFlag"src="" width="500" alt="@TempData.Peek("name")'s flag" />
+<script>
+    let img = document.getElementById("CountryFlag");
+    img.setAttribute("src", "@TempData.Peek("flag")");
+</script>

@@ -12,15 +12,15 @@ namespace CountriesAroundTheWorld.Models
         public string Greeting { get; set; }
         public string Description { get; set; }
         public List<string> Colors { get; set; } = new List<string>();
-        //public string   FlagSrc { get; set; }
-        public Country(string Name, List<string> Languages, string Greeting, string Description, List<string> Colors)
+        public string   FlagSrc { get; set; }
+        public Country(string Name, List<string> Languages, string Greeting, string Description, List<string> Colors, string FlagSrc)
         {
             this.Name = Name;
             this.Languages = Languages;
             this.Greeting = Greeting;
             this.Description = Description;
             this.Colors = Colors;
-           //this.FlagSrc = FlagSrc;
+           this.FlagSrc = FlagSrc;
         }
     }
 }
